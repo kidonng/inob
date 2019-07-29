@@ -26,6 +26,7 @@ export default (
     else if (selector instanceof Element) items = [selector]
     else if (selector instanceof NodeList || Array.isArray(selector))
       items = selector
+    else throw new TypeError('Invalid selector')
 
     items.forEach(item => observer.observe(item))
 
