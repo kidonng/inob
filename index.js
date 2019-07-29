@@ -11,15 +11,14 @@ export default (
 ) => {
   // Skip SSR
   if (typeof window !== 'undefined') {
-    const observer = new IntersectionObserver(
-      ([{ isIntersecting, target }]) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(({ isIntersecting, target }) => {
         if (isIntersecting) {
           observer.unobserve(target)
           callback(target)
         }
-      },
-      options
-    )
+      })
+    }, options)
 
     let items = null
     if (typeof selector === 'string')
