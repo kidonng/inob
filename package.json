@@ -1,0 +1,19 @@
+{
+  "name": "inob",
+  "version": "0.1.0",
+  "description": "Yet another IntersectionObserver abuse",
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidonng/inob.git"
+  },
+  "author": "kidonng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kidonng/inob/issues"
+  },
+  "homepage": "https://github.com/kidonng/inob#readme"
+}
