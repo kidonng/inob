@@ -16,6 +16,7 @@ It is created because I want it simple enough, even than [Lozad.js](https://gith
 
 - npm: `npm i inob`
 - Yarn: `yarn add inob`
+- Browser (ESM): See [demo](https://github.com/kidonng/inob/blob/gh-pages/index.html#L43-L47)
 
 ## Usage
 
