@@ -8,7 +8,7 @@
 
 </div>
 
-Yet another IntersectionObserver ~~abuse~~ wrapper. Default behavior is the same old lazy loader ([demo](https://kidonng.github.io/inob/)).
+Yet another IntersectionObserver ~~abuse~~ wrapper. Default behavior is the same old lazy loader ([live demo](https://stackblitz.com/edit/headroom-demo)).
 
 It is created because I want it simple enough, even than [Lozad.js](https://github.com/ApoorvSaxena/lozad.js).
 
@@ -16,7 +16,7 @@ It is created because I want it simple enough, even than [Lozad.js](https://gith
 
 - npm: `npm i inob`
 - Yarn: `yarn add inob`
-- Browser (ESM): See [demo](https://github.com/kidonng/inob/blob/gh-pages/index.html#L43-L47)
+- Browser (ESM): `import inob from 'https://cdn.jsdelivr.net/npm/inob'`
 
 ## Usage
 
