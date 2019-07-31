@@ -8,7 +8,7 @@
 
 </div>
 
-Yet another IntersectionObserver ~~abuse~~ wrapper. Default behavior is the same old lazy loader ([live demo](https://stackblitz.com/edit/headroom-demo)).
+Yet another IntersectionObserver ~~abuse~~ wrapper. Default behavior is the same old lazy loader ([live demo](https://stackblitz.com/edit/inob-demo)).
 
 It is created because I want it simple enough, even than [Lozad.js](https://github.com/ApoorvSaxena/lozad.js).
 
