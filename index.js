@@ -1,14 +1,11 @@
 const defaultCallback = target => {
-  target.src = target.dataset.src
+  if (target.dataset.src) target.src = target.dataset.src
+  if (target.dataset.srcset) target.srcset = target.dataset.srcset
   // Add [data-loaded] attribute
   target.onload = () => (target.dataset.loaded = true)
 }
 
-export default (
-  selector = '[data-src]',
-  callback = defaultCallback,
-  options
-) => {
+export default (selector = '.inob', callback = defaultCallback, options) => {
   // Skip SSR
   if (typeof window !== 'undefined') {
     const observer = new IntersectionObserver(entries => {

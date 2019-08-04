@@ -8,9 +8,7 @@
 
 </div>
 
-Yet another IntersectionObserver ~~abuse~~ wrapper. Default behavior is the same old lazy loader ([live demo](https://stackblitz.com/edit/inob-demo)).
-
-It is created because I want it simple enough, even than [Lozad.js](https://github.com/ApoorvSaxena/lozad.js).
+Yet another [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) ~~abuse~~ wrapper. Default behavior is a [lazyload](https://github.com/verlok/lazyload) library ([demo](https://stackblitz.com/edit/inob-demo)).
 
 ## Install
 
@@ -20,7 +18,7 @@ It is created because I want it simple enough, even than [Lozad.js](https://gith
 
 ## Usage
 
-This module takes advantage of [`InterSectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). You may want to check out [support table](https://caniuse.com/#feat=intersectionobserver) and [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill) as well.
+This module uses `InterSectionObserver`. You may want to check out [support table](https://caniuse.com/#feat=intersectionobserver) and [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
 
 ```js
 import inob from 'inob'
@@ -28,7 +26,7 @@ import inob from 'inob'
 // Selector
 inob('.lazy')
 
-// Default selector is `[data-src]`
+// Default selector is `.inob`
 inob()
 
 // Element, NodeList or Array of elements
@@ -36,11 +34,10 @@ inob(document.querySelectorAll('.lazy'))
 
 // Return value is the observer
 const observer = inob('.lazy', target => {
-  // Default callback
-  target.src = target.dataset.src
-  target.onload = () => (target.dataset.loaded = true)
+  // Callback
+  target.classList.add('.fadeIn')
 }, {
-  // Optional intersection observer options
+  // Observer options
   root: document.querySelector('#scrollArea')
 })
 // Stop watching
