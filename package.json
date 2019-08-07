@@ -1,19 +1,21 @@
 {
   "name": "inob",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Yet another IntersectionObserver wrapper",
-  "main": "index.js",
-  "files": [
-    "*.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kidonng/inob.git"
-  },
-  "author": "kidonng",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kidonng/inob/issues"
+  "repository": "kidonng/inob",
+  "author": "Kid (https://github.com/kidonng)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
   },
-  "homepage": "https://github.com/kidonng/inob#readme"
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
 }
