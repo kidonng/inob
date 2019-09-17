@@ -15,8 +15,8 @@ Yet another [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/We
 
 ### ES Modules
 
-- `import inob from 'https://cdn.jsdelivr.net/npm/inob'`
-- `import inob from 'https://unpkg.com/inob'`
+- `import { inob } from 'https://cdn.jsdelivr.net/npm/inob'`
+- `import { inob } from 'https://unpkg.com/inob'`
 
 ## Usage
 
