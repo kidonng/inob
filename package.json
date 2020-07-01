@@ -11,8 +11,8 @@
     "dist"
   ],
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "prettier": "1.19.1",
+    "typescript": "3.9.6"
   },
   "prettier": {
     "semi": false,
